@@ -3,8 +3,8 @@ Creating a repo for storing and testing end to end deployment scripts
 
 
 ### Creating a Data Science - Standard Template 
-![YTLink](https://www.youtube.com/watch?v=mpk4Q5feWaw)
-![Article](https://clickup.pxf.io/ana61R)
+[YTLink](https://www.youtube.com/watch?v=mpk4Q5feWaw)
+[Article](https://clickup.pxf.io/ana61R)
 
 * pip install cookiecutter-data-science
 * ccds 
