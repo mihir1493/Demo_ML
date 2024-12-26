@@ -20,4 +20,4 @@ Create virtual environment
 STD Conventions -> Versioning | Config | PEP8/linting tools
 Package Mandatory Files -> setup.py & MANIFEST
 
-![note_to_prod](https://github.com/mihir1493/Demo_ML/blob/main/demo_ml_v1/reports/figures/DMLM%2B-%2Bnotebook%2Bto%2Bcode%2Bdiagram.jpeg)
+![note_to_prod](https://github.com/mihir1493/Demo_ML/blob/main/reports/figures/DMLM%2B-%2Bnotebook%2Bto%2Bcode%2Bdiagram.jpeg)
