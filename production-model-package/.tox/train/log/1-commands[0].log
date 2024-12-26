@@ -1,0 +1,58 @@
+name: train
+run_id: commands[0]
+env HOME: /Users/mshinde
+env TMPDIR: /var/folders/d5/239tw4ys7q9dg8t57hdg3gsc0000gn/T/
+env LANG: en_US.UTF-8
+env TERM: xterm-256color
+env PATH: /Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/bin:/Users/mshinde/Library/Python/3.9/lib/python/site-packages:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/homebrew/Caskroom/miniforge/base/envs/prod_ml/bin:/opt/homebrew/Caskroom/miniforge/base/condabin:/Users/mshinde/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env PYTHONHASHSEED: 0
+env TOX_ENV_NAME: train
+env TOX_WORK_DIR: /Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox
+env TOX_ENV_DIR: /Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package
+env VIRTUAL_ENV: /Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package
+env COLUMNS: 141
+env LINES: 20
+metadata pid: 84014
+cwd: /Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package
+allow: /Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/bin/*:train
+cmd: python regression_model/train_pipeline.py
+exit_code: 1
+
+standard error:
+/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/utils/_tags.py:354: FutureWarning: The CategoricalImputer or classes from which it inherits use `_get_tags` and `_more_tags`. Please define the `__sklearn_tags__` method, or inherit from `sklearn.base.BaseEstimator` and/or other appropriate mixins such as `sklearn.base.TransformerMixin`, `sklearn.base.ClassifierMixin`, `sklearn.base.RegressorMixin`, and `sklearn.base.OutlierMixin`. From scikit-learn 1.7, not defining `__sklearn_tags__` will raise an error.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/regression_model/train_pipeline.py", line 33, in <module>
+    run_training()
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/regression_model/train_pipeline.py", line 26, in run_training
+    price_pipe.fit(X_train, y_train)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/pipeline.py", line 652, in fit
+    Xt = self._fit(X, y, routed_params, raw_params=params)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/pipeline.py", line 586, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/joblib/memory.py", line 312, in __call__
+    return self.func(*args, **kwargs)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/pipeline.py", line 1540, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/base.py", line 921, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/feature_engine/imputation/categorical.py", line 225, in transform
+    X = self._transform(X)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/feature_engine/imputation/base_imputer.py", line 45, in _transform
+    check_is_fitted(self)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/utils/validation.py", line 1751, in check_is_fitted
+    tags = get_tags(estimator)
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/utils/_tags.py", line 405, in get_tags
+    sklearn_tags_provider[klass] = klass.__sklearn_tags__(estimator)  # type: ignore[attr-defined]
+  File "/Users/mshinde/Desktop/Projects/Demo_ML/Demo_ML/production-model-package/.tox/test_package/lib/python3.9/site-packages/sklearn/base.py", line 859, in __sklearn_tags__
+    tags = super().__sklearn_tags__()
+AttributeError: 'super' object has no attribute '__sklearn_tags__'
