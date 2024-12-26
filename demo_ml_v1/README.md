@@ -15,3 +15,7 @@ Create virtual environment
 * conda install --yes --file requirements.txt
 
 
+### Transform Jupyter Notebook to Packaged Production Code 
+`- Why do we make package - Idea is to embedd the model as a dependency in application that makes it easy to consume.`   
+STD Conventions -> Versioning | Config | PEP8/linting tools
+Package Mandatory Files -> setup.py & MANIFEST
